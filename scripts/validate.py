@@ -33,6 +33,21 @@ def local_path(root: Path, value: str) -> Path:
     return path
 
 
+def localized_manifest(language: str) -> dict:
+    manifest = json.loads((PLUGIN / ".codex-plugin/plugin.json").read_text())
+    if language == "en":
+        return manifest
+    if language != "es":
+        raise ValueError("Unsupported plugin language.")
+    locale = json.loads((PLUGIN / "locales/es.json").read_text())
+    check(locale["schema_version"] == 1 and locale["language"] == language, "Invalid Spanish locale")
+    check(set(locale["interface"]) == {"displayName", "shortDescription", "longDescription", "defaultPrompt"}, "Unexpected locale interface fields")
+    manifest["description"] = locale["description"]
+    manifest["interface"].update(locale["interface"])
+    manifest["extensions"]["com.openai"]["publication"]["release_notes"] = locale["release_notes"]
+    return manifest
+
+
 def validate() -> dict:
     files = project_files()
     forbidden_suffixes = {".ttf", ".otf", ".woff", ".woff2", ".ttc", ".pdf", ".zip", ".bundle"}
@@ -95,10 +110,29 @@ def validate() -> dict:
     match = re.match(r"---\nname: ([^\n]+)\ndescription: ([^\n]+)\n---\n", instructions)
     check(match is not None and match[1] == SKILL.name, "Skill frontmatter invalid")
     check(len(instructions.splitlines()) <= 500 and len(match[2]) < 1024, "Skill metadata/body too long")
-    yaml = (SKILL / "agents/openai.yaml").read_text()
-    fields = {key: json.loads(value) for key, value in re.findall(r'^\s+(display_name|short_description|default_prompt): (".*")$', yaml, re.M)}
-    check(25 <= len(fields["short_description"]) <= 64, "Skill UI description length invalid")
-    check("$" + SKILL.name in fields["default_prompt"], "Skill UI prompt needs invocation")
+    spanish_instructions = (SKILL / "SKILL.es.md").read_text()
+    spanish_match = re.match(r"---\nname: ([^\n]+)\ndescription: ([^\n]+)\n---\n", spanish_instructions)
+    check(spanish_match is not None and spanish_match[1] == SKILL.name, "Spanish skill identity mismatch")
+    check(len(spanish_instructions.splitlines()) <= 500 and len(spanish_match[2]) < 1024, "Spanish skill metadata/body too long")
+    for name in ("agents/openai.yaml", "agents/openai.es.yaml"):
+        yaml = (SKILL / name).read_text()
+        fields = {key: json.loads(value) for key, value in re.findall(r'^\s+(display_name|short_description|default_prompt): (".*")$', yaml, re.M)}
+        check(25 <= len(fields["short_description"]) <= 64, "Skill UI description length invalid")
+        check("$" + SKILL.name in fields["default_prompt"], "Skill UI prompt needs invocation")
+        check("allow_implicit_invocation: true" in yaml, "Localized invocation policy mismatch")
+    translated = localized_manifest("es")
+    check(translated["name"] == manifest["name"] and translated["version"] == manifest["version"], "Localized plugin identity mismatch")
+    for field, limit in (("displayName", 30), ("shortDescription", 30), ("longDescription", 4000)):
+        check(0 < len(translated["interface"][field]) <= limit, "Spanish listing field invalid")
+    check(len(translated["interface"]["defaultPrompt"]) <= 3 and all(0 < len(p) <= 128 for p in translated["interface"]["defaultPrompt"]), "Spanish prompts invalid")
+    for directory in ("references", "assets"):
+        for source in (SKILL / directory).glob("*.md"):
+            if ".es." not in source.name:
+                check(source.with_name(source.stem + ".es.md").is_file(), "Missing Spanish resource: " + source.name)
+    check(json.loads((SKILL / "assets/reading-tokens.json").read_text())["profiles"] == json.loads((SKILL / "assets/reading-tokens.es.json").read_text())["profiles"], "Localization changed reading metrics")
+    corpora = [json.loads((SKILL / name).read_text())["samples"] for name in ("assets/corpus.json", "assets/corpus.es.json")]
+    comparable = lambda corpus: [(sample["id"], sample["kind"], sample["text"], sample.get("heading"), sample.get("lead"), sample.get("language")) for sample in corpus]
+    check(comparable(corpora[0]) == comparable(corpora[1]), "Localization changed the diagnostic corpus")
     for name in ("inspect_font.py", "build_proof.py", "capture_proof.mjs", "font_evidence.py"):
         check((SKILL / "scripts" / name).is_file(), f"Missing promised helper: {name}")
     for path in files:
@@ -111,7 +145,8 @@ def validate() -> dict:
     ids = [case["id"] for case in cases["cases"]]
     check(len(set(ids)) == len(ids), "Duplicate evaluation cases")
     return {"plugin": manifest["name"], "version": manifest["version"], "files_checked": len(files),
-            "skill_lines": len(instructions.splitlines()), "proposed_evaluation_cases": len(ids),
+            "skill_lines": len(instructions.splitlines()), "spanish_skill_lines": len(spanish_instructions.splitlines()),
+            "languages": ["en", "es"], "proposed_evaluation_cases": len(ids),
             "limits": "Package/document checks, not official approval or an executed agent-quality benchmark."}
 
 

@@ -69,6 +69,34 @@ behavior were not tested by this single-face helper verification.
 
 Public repository creation was attempted from the cloud connection and rejected:
 `403 — Resource not accessible by integration`. A read confirmed the intended
-repository was not available. No public repository, GitHub release or OpenAI
-directory publication is claimed by this record. Publishing requires the
-authorized publisher workflow documented in [PUBLISHING.md](PUBLISHING.md).
+repository was not available. The authorized Mac subsequently recovered the 18 final bridge blocks, verified
+the bundle SHA-256, published v0.4.0 and verified the remote commit/tag and all
+three downloaded ZIPs. OpenAI directory submission remains separate.
+
+## Version 0.4.1 localization checks
+
+2026-10-08. Full Spanish instructions, ten references, templates, interface
+metadata and localized proof labels/defaults were added while keeping English.
+The validator, skill metadata check, package localization check and local
+publisher simulation passed. Six archives provide English/Spanish skill,
+plugin and marketplace install editions; maintainer tooling remains in the
+canonical source checkout. Identity, helper bytes and reading metrics match
+between language editions.
+
+Asap Regular with the same SHA-256 above was used outside the distribution.
+Python 3.13 / FontTools 4.58.0 rendered both proof languages. Actual font
+embedding, accents, per-paragraph language tags, Spanish withholding for
+unsupported glyphs, HTML escaping, invalid-language refusal, output preservation
+and unchanged font hashes passed. Chrome 154.0.8037.98 / Playwright on macOS
+verified custom-font use in 72 desktop samples and 60 at each mobile width
+(1440/390/320 CSS px), without fallback or missing evidence.
+
+Opened the Spanish interface header, full Spanish reading proof in both
+polarities, desktop controls and mobile reading captures. Titles, leads and
+body remained visible. English and Spanish paragraph measurements at 1440 px
+were identical. These are localization/tool checks, not a new font approval
+or native Office/iOS certification.
+
+Extracted all three Spanish install packages and ran their actual proof helper
+without a language flag: all selected Spanish by default. The extracted
+Spanish skill also passed the skill-creator metadata validator.

@@ -1,6 +1,6 @@
 # Prepared directory submission
 
-Version 0.4.0; skills-only plugin. This document is prepared listing material,
+Version 0.4.1; skills-only plugin. This document is prepared listing material,
 not evidence that an upload, review or public publication has occurred.
 
 - Name: **Typography Studio**
@@ -9,8 +9,8 @@ not evidence that an upload, review or public publication has occurred.
 - Category: Developer Tools; confirm the dashboard's available category.
 - Source and support after repository publication:
   `https://github.com/martinsantos/typography-studio`, Issues tab.
-- Language: English instructions, Spanish listing translation, reports in the
-  user's language. Initial exercise corpus: Latin English/Spanish.
+- Languages: English and Spanish instructions, references, templates and
+  listing text; reports in the user's language. Initial exercise corpus: Latin English/Spanish.
 
 ## Description
 

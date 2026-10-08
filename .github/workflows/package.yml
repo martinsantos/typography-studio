@@ -16,6 +16,8 @@ jobs:
         run: python scripts/validate.py
       - name: Exercise publisher with local Git and simulated GitHub
         run: python scripts/check_publisher.py
+      - name: Verify installable English and Spanish variants
+        run: python scripts/check_localization.py
       - name: Build verified archives
         run: python scripts/package.py --output dist
       - uses: actions/upload-artifact@v4

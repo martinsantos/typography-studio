@@ -3,18 +3,20 @@
 These are separate channels. Complete the appropriate publication rather than
 describing a local ZIP as a public listing. Requirements checked 2026-10-08.
 
+[Español](PUBLISHING.es.md). Spanish install-ready packages use `-es.zip`: skill,
+plugin and marketplace, with the same identities as their English editions.
+
 ## 1. Public source repository and repo marketplace
 
-The intended source repository is `martinsantos/typography-studio`. Until a
-verified publication receipt exists, that address is a destination, not proof
-that the repository is accessible. Keep font binaries, confidential projects,
+The public source repository is `martinsantos/typography-studio`. Version 0.4.0
+was published and verified from the authorized Mac on 2026-10-08. Keep font binaries, confidential projects,
 third-party PDFs and credentials outside it.
 
 After it exists publicly, register the repository marketplace in a compatible
 Codex client:
 
 ```sh
-codex plugin marketplace add martinsantos/typography-studio --ref v0.4.0
+codex plugin marketplace add martinsantos/typography-studio --ref v0.4.1
 codex plugin add typography-studio@typography-studio-marketplace
 ```
 
@@ -56,7 +58,7 @@ root; it does not wrap the plugin inside the marketplace repository.
 1. Sign in to the developer dashboard and select the publishing organization
    and project. The publisher needs owner access or Apps Management Write and
    a verified individual/business developer identity.
-2. Open Plugins and upload a new plugin using `typography-studio-0.4.0-plugin.zip`.
+2. Open Plugins and upload a new plugin using `typography-studio-0.4.1-plugin.zip`.
    Select the actual verified publisher. The displayed publisher follows that
    identity; metadata alone cannot verify it.
 3. Resolve the automated checks, confirm the category offered by the dashboard,
@@ -79,7 +81,7 @@ and [Plugin guidelines](https://developers.openai.com/plugins/plugin-guidelines)
 
 ## 3. Release checks
 
-Run the validator, build the three deterministic archives, verify their
+Run the validator, build the six deterministic archives, verify their
 checksums and inspect the exact manifest inside the submission archive.
 Exercise the optional helpers on a licensed font outside the repository,
 verify missing-glyph and overwrite behavior, and open actual screenshots.

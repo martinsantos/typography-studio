@@ -1,11 +1,25 @@
 {
   "name": "typography-studio",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Design and refine typefaces through editable sources, real rendered proofs, optical review, spacing, families and responsive typographic hierarchy.",
-  "author": {"name": "Martín Santos", "url": "https://github.com/martinsantos"},
+  "author": {
+    "name": "Martín Santos",
+    "url": "https://github.com/martinsantos"
+  },
   "repository": "https://github.com/martinsantos/typography-studio",
   "license": "MIT",
-  "keywords": ["typography", "font-design", "type-design", "glyphs", "kerning", "variable-fonts", "visual-review", "legibility", "tipografia", "diseno-de-fuentes"],
+  "keywords": [
+    "typography",
+    "font-design",
+    "type-design",
+    "glyphs",
+    "kerning",
+    "variable-fonts",
+    "visual-review",
+    "legibility",
+    "tipografia",
+    "diseno-de-fuentes"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Typography Studio",
@@ -14,18 +28,25 @@
     "developerName": "Martín Santos",
     "category": "Developer Tools",
     "capabilities": [],
-    "defaultPrompt": ["Help me design a typeface from its brief and review control glyphs in real words.", "Review my font's curves, spacing, punctuation and hierarchy using actual rendered proofs."],
+    "defaultPrompt": [
+      "Help me design a typeface from its brief and review control glyphs in real words.",
+      "Review my font's curves, spacing, punctuation and hierarchy using actual rendered proofs."
+    ],
     "logo": "./assets/icon.svg",
     "composerIcon": "./assets/icon.svg"
   },
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "First standalone brand-independent edition: type-design workflow, attributed references, generic exercises, local proofing helpers and evidence-based acceptance.",
+        "release_notes": "Bilingual edition with complete Spanish skill instructions, references, templates, localized proofs and ready-to-install Spanish ZIPs.",
         "translations": {
+          "es": {
+            "subtitle": "Diseñá y revisá fuentes",
+            "description": "Diseñá y refiná fuentes desde su propósito: glifos de control, correcciones ópticas, espaciado, kerning, pesos, cursivas, familias variables y exportaciones. Revisá palabras renderizadas y jerarquías de lectura con referencias atribuidas y evidencia. Incluye instrucciones, referencias, plantillas y herramientas locales en español, con un corpus latino en español e inglés. Requiere inspeccionar imágenes y un editor adecuado para modificar fuentes. Los controles técnicos no certifican estética, velocidad de lectura ni plataformas sin probar."
+          },
           "es-AR": {
-            "subtitle": "Diseñá fuentes y revisalas",
-            "description": "Diseñá y refiná fuentes desde un brief: glifos de control, correcciones ópticas, espaciado, kerning, pesos, cursivas, familias variables y exportaciones. Revisá palabras reales y jerarquías de lectura con pruebas visuales, referencias atribuidas y herramientas locales opcionales. El corpus inicial es latino en español e inglés. Requiere inspeccionar imágenes y disponer de un editor adecuado para modificar las fuentes. No certifica estética, velocidad de lectura ni plataformas no probadas."
+            "subtitle": "Diseñá y revisá fuentes",
+            "description": "Diseñá y refiná fuentes desde su propósito: glifos de control, correcciones ópticas, espaciado, kerning, pesos, cursivas, familias variables y exportaciones. Revisá palabras renderizadas y jerarquías de lectura con referencias atribuidas y evidencia. Incluye instrucciones, referencias, plantillas y herramientas locales en español, con un corpus latino en español e inglés. Requiere inspeccionar imágenes y un editor adecuado para modificar fuentes. Los controles técnicos no certifican estética, velocidad de lectura ni plataformas sin probar."
           }
         }
       }

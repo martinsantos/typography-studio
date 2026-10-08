@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "description": "Diseñá y refiná fuentes con archivos editables, pruebas visuales reales, revisión óptica, espaciado, familias y jerarquía tipográfica adaptable.",
+  "interface": {
+    "displayName": "Typography Studio",
+    "shortDescription": "Diseñá y revisá fuentes",
+    "longDescription": "Diseñá y refiná fuentes desde su propósito: glifos de control, correcciones ópticas, espaciado, kerning, pesos, cursivas, familias variables y exportaciones. Revisá palabras renderizadas y jerarquías de lectura con referencias atribuidas y evidencia. Incluye instrucciones, referencias, plantillas y herramientas locales en español, con un corpus latino en español e inglés. Requiere inspeccionar imágenes y un editor adecuado para modificar fuentes. Los controles técnicos no certifican estética, velocidad de lectura ni plataformas sin probar.",
+    "defaultPrompt": [
+      "Ayudame a diseñar una fuente desde su propósito y revisar los glifos de control en palabras reales.",
+      "Revisá las curvas, el espaciado, la puntuación y la jerarquía de mi fuente con pruebas visuales reales."
+    ]
+  },
+  "release_notes": "Edición bilingüe con instrucciones, referencias y plantillas en español, interfaz de pruebas localizada y ZIP de skill y plugin listos para usar en español."
+}

@@ -10,7 +10,8 @@ The workflow is independent of any brand, typeface or house style.
 Helper output with the existing open-source **Asap Regular**, not a font drawn
 by this skill. The font is not distributed. See [validation and attribution](docs/VALIDATION.md).
 
-**Version 0.4.0.** The first standalone, brand-independent package. It is a
+**Version 0.4.1.** English and Spanish instructions, references, templates
+and ready-to-install localized packages. It is a
 review workflow with optional proofing helpers, not an autonomous font editor
 or a certificate of typographic quality. The included corpus focuses on Latin
 English and Spanish; adapt it and use appropriate expertise for other scripts.
@@ -47,6 +48,8 @@ Start with a request such as:
 > Use $typography-design-review to review this font's spacing and punctuation
 > at 16, 24 and 48 px. Compare actual images and preserve the current source.
 
+For Spanish install entrypoints and interface text, use the `-es.zip` packages
+from [release v0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
 The agent should answer in your language. Use an agent with image inspection
 and the editor/compiler your project needs.
 
@@ -74,8 +77,10 @@ python3 scripts/validate.py
 python3 scripts/package.py --output dist
 ```
 
-The packager produces a plugin ZIP for OpenAI submission, a standalone skill
-ZIP with its license, a marketplace ZIP and SHA-256 checksums. It refuses to
+The packager produces plugin, standalone skill and marketplace ZIPs in English
+and Spanish, plus SHA-256 checksums. The `-es.zip` editions localize install
+entrypoints, interface metadata and proof defaults while preserving identities
+and executable helpers. It refuses to
 overwrite an existing output directory. Optional font proofing uses FontTools
 and Playwright; see [Tooling](plugins/typography-studio/skills/typography-design-review/references/tooling.md).
 
