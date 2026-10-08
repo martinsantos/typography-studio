@@ -6,12 +6,16 @@ ni publicación en el catálogo de OpenAI.
 
 - Nombre: **Typography Studio**
 - Subtítulo: **Diseñá y revisá fuentes**
-- Editor: identidad verificada elegida en el panel.
+- Editor: **Martín Santos**, como persona. Elegir esa identidad verificada
+  en el panel antes de cargar el paquete.
 - Categoría: confirmar las opciones vigentes del panel.
 - Soporte: [Issues del repositorio](https://github.com/martinsantos/typography-studio/issues).
 - Idiomas: instrucciones, diez referencias y plantillas en español e inglés;
   informes en el idioma del usuario. Corpus latino en ambos idiomas.
-- Paquete español: `typography-studio-0.4.1-plugin-es.zip`.
+- Paquete para la ficha única del directorio: `typography-studio-0.4.1-plugin.zip`
+  de la [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
+  Incluye los recursos en español e inglés. El ZIP `-plugin-es.zip` sigue
+  disponible para quienes prefieran metadatos y valores iniciales españoles.
 
 ## Descripción
 

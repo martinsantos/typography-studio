@@ -10,6 +10,18 @@ Es independiente de marcas, familias concretas y estilos obligatorios.
 
 ## Descargar e instalar
 
+También podés instalar la skill desde el repositorio con el CLI de Skills
+(Node 22.20+ para su versión 1.7.1):
+
+```sh
+npx skills add martinsantos/typography-studio --skill typography-design-review
+```
+
+Se comprobó que el CLI detecta la skill. El paquete del repositorio incluye
+las instrucciones y referencias españolas y sigue el idioma del usuario.
+Los ZIP `-es.zip` seleccionan además los metadatos y valores predeterminados
+en español. [Plan de distribución](docs/DISTRIBUTION.es.md).
+
 [La release 0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1)
 contiene tres paquetes en español:
 

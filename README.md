@@ -35,6 +35,16 @@ gaps rather than positive results. See the
 
 ## Install the skill
 
+Install the published skill with the Skills CLI (Node 22.20+ for CLI 1.7.1):
+
+```sh
+npx skills add martinsantos/typography-studio --skill typography-design-review
+```
+
+The CLI discovery command was checked against this repository and found the
+single canonical skill. See the [distribution guide](docs/DISTRIBUTION.md)
+for OpenAI submission and community directory proposals.
+
 Copy `plugins/typography-studio/skills/typography-design-review/` into your
 project's `.agents/skills/` directory. The resulting entry is
 `.agents/skills/typography-design-review/SKILL.md`. This manual route works
