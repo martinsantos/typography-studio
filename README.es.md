@@ -1,11 +1,11 @@
 # Typography Studio — español
 
 Skill abierta y plugin de Codex para **diseñar fuentes tipográficas y revisar
-su calidad visual**. Versión **0.4.1**, con instrucciones, diez referencias,
+su calidad visual**. Versión **0.4.2**, con instrucciones, diez referencias,
 plantillas y herramientas de prueba en español. También conserva el inglés.
 Es independiente de marcas, familias concretas y estilos obligatorios.
 
-[English](https://github.com/martinsantos/typography-studio/blob/v0.4.1/README.md) · [Instrucciones de la skill](plugins/typography-studio/skills/typography-design-review/SKILL.es.md) ·
+[English](https://github.com/martinsantos/typography-studio/blob/v0.4.2/README.md) · [Privacidad](docs/PRIVACY.es.md) · [Instrucciones de la skill](plugins/typography-studio/skills/typography-design-review/SKILL.es.md) ·
 [Fuentes consultadas](plugins/typography-studio/skills/typography-design-review/references/sources.es.md)
 
 ## Descargar e instalar
@@ -22,15 +22,15 @@ las instrucciones y referencias españolas y sigue el idioma del usuario.
 Los ZIP `-es.zip` seleccionan además los metadatos y valores predeterminados
 en español. [Plan de distribución](docs/DISTRIBUTION.es.md).
 
-[La release 0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1)
+[La release 0.4.2](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2)
 contiene tres paquetes en español:
 
-- **Skill:** `typography-studio-0.4.1-skill-es.zip`. Extraelo en tu proyecto;
+- **Skill:** `typography-studio-0.4.2-skill-es.zip`. Extraelo en tu proyecto;
   la entrada queda en `.agents/skills/typography-design-review/SKILL.md`.
-- **Plugin:** `typography-studio-0.4.1-plugin-es.zip`. Tiene manifiesto,
+- **Plugin:** `typography-studio-0.4.2-plugin-es.zip`. Tiene manifiesto,
   instrucciones e interfaz en español, preparado para importación compatible
   y presentación al catálogo.
-- **Marketplace:** `typography-studio-0.4.1-marketplace-es.zip`. Extraelo en
+- **Marketplace:** `typography-studio-0.4.2-marketplace-es.zip`. Extraelo en
   una carpeta nueva e instalalo con los comandos siguientes.
 
 ```sh

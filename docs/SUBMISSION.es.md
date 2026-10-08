@@ -1,6 +1,6 @@
 # Material de presentación al catálogo
 
-Versión 0.4.1, plugin compuesto únicamente por una skill.
+Versión 0.4.2, plugin compuesto únicamente por una skill.
 Este documento prepara la presentación; no acredita envío, aprobación
 ni publicación en el catálogo de OpenAI.
 
@@ -8,12 +8,14 @@ ni publicación en el catálogo de OpenAI.
 - Subtítulo: **Diseñá y revisá fuentes**
 - Editor: **Martín Santos**, como persona. Elegir esa identidad verificada
   en el panel antes de cargar el paquete.
-- Categoría: confirmar las opciones vigentes del panel.
+- Categoría: **Creativity**, por su propósito de diseño y revisión tipográfica.
 - Soporte: [Issues del repositorio](https://github.com/martinsantos/typography-studio/issues).
+- Privacidad: [aviso bilingüe](https://github.com/martinsantos/typography-studio/blob/main/docs/PRIVACY.es.md).
+- Condiciones del código distribuido: [licencia MIT](https://github.com/martinsantos/typography-studio/blob/main/LICENSE).
 - Idiomas: instrucciones, diez referencias y plantillas en español e inglés;
   informes en el idioma del usuario. Corpus latino en ambos idiomas.
-- Paquete para la ficha única del directorio: `typography-studio-0.4.1-plugin.zip`
-  de la [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
+- Paquete para la ficha única del directorio: `typography-studio-0.4.2-plugin.zip`
+  de la [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2).
   Incluye los recursos en español e inglés. El ZIP `-plugin-es.zip` sigue
   disponible para quienes prefieran metadatos y valores iniciales españoles.
 

@@ -1,17 +1,14 @@
-# Typography Studio 0.4.1 — también en español
+# Typography Studio 0.4.2 — ficha del directorio
 
-La skill y el plugin ahora incluyen instrucciones completas en español,
-diez referencias traducidas, plantillas de propósito, revisión y práctica,
-metadatos de interfaz y descripciones de instalación.
+La ficha del plugin usa la categoría Creativity y añade enlaces públicos
+al proyecto, soporte, aviso bilingüe de privacidad y licencia MIT.
+Responde a las observaciones de metadatos del panel de OpenAI.
 
-El generador de pruebas admite `--language es` y `--language en`.
-Traduce encabezados, rótulos, estado de carga y avisos de cobertura;
-conserva la fuente real, las medidas y los textos de diagnóstico.
-La edición española usa español por defecto.
+Las instrucciones, referencias, plantillas, corpus de diagnóstico y
+auxiliares de pruebas conservan su contenido en español e inglés.
+Hay seis ZIP de skill, plugin y marketplace, con sus hashes SHA-256.
 
-Descargá skill, plugin o marketplace: cada uno tiene ZIP inglés y español,
-con SHA-256 en el manifiesto. Las ediciones conservan la misma identidad
-de instalación y los mismos auxiliares. La versión 0.4.0 sigue disponible.
-
-Licencia MIT. La publicación en el catálogo de OpenAI sigue siendo una
-presentación independiente con identidad verificada y revisión.
+El borrador 0.4.1 ya se cargó en OpenAI. Los controles automáticos y su
+presentación final siguen siendo pasos independientes de esta release.
+El [PR #559 de Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+ya está enviado y espera la revisión del mantenedor.

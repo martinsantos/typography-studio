@@ -18,9 +18,12 @@
 
 Abrí [Plugins](https://platform.openai.com/plugins), seleccioná la organización
 y proyecto, y completá la identidad de publicación verificada. Subí
-`typography-studio-0.4.1-plugin.zip`: contiene recursos españoles y
+`typography-studio-0.4.2-plugin.zip`: contiene recursos españoles y
 traducciones de la ficha. Resolvé los controles de metadatos y skills,
 presentá a revisión y publicá la versión aprobada.
+
+La versión 0.4.2 prepara la categoría Creativity y enlaces públicos de proyecto,
+soporte, privacidad y licencia MIT a partir de las observaciones del panel.
 
 Es un plugin compuesto por una skill. Seguí las
 [instrucciones oficiales](https://developers.openai.com/plugins/deploy/submission)

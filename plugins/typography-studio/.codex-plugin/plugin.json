@@ -1,6 +1,6 @@
 {
   "name": "typography-studio",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Design and refine typefaces through editable sources, real rendered proofs, optical review, spacing, families and responsive typographic hierarchy.",
   "author": {
     "name": "Martín Santos",
@@ -26,19 +26,23 @@
     "shortDescription": "Design fonts, inspect proofs",
     "longDescription": "Build and refine typefaces from a brief: control glyphs, optical corrections, spacing, kerning, weights, italics, variable families and exports. Review actual rendered words and responsive hierarchy, with clear attribution and evidence. Includes optional local proofing scripts and Latin English/Spanish exercises. Requires image inspection for visual conclusions and suitable font-editing tools for source changes. Technical checks do not certify aesthetics, reading speed or untested platforms.",
     "developerName": "Martín Santos",
-    "category": "Developer Tools",
+    "category": "Creativity",
     "capabilities": [],
     "defaultPrompt": [
       "Help me design a typeface from its brief and review control glyphs in real words.",
       "Review my font's curves, spacing, punctuation and hierarchy using actual rendered proofs."
     ],
     "logo": "./assets/icon.svg",
-    "composerIcon": "./assets/icon.svg"
+    "composerIcon": "./assets/icon.svg",
+    "websiteURL": "https://github.com/martinsantos/typography-studio",
+    "supportURL": "https://github.com/martinsantos/typography-studio/issues",
+    "privacyPolicyURL": "https://github.com/martinsantos/typography-studio/blob/main/docs/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/martinsantos/typography-studio/blob/main/LICENSE"
   },
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Bilingual edition with complete Spanish skill instructions, references, templates, localized proofs and ready-to-install Spanish ZIPs.",
+        "release_notes": "Directory metadata: Creativity category and public project, support, privacy and MIT license links. English and Spanish skill resources remain unchanged.",
         "translations": {
           "es": {
             "subtitle": "Diseñá y revisá fuentes",

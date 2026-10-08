@@ -16,7 +16,7 @@ After it exists publicly, register the repository marketplace in a compatible
 Codex client:
 
 ```sh
-codex plugin marketplace add martinsantos/typography-studio --ref v0.4.1
+codex plugin marketplace add martinsantos/typography-studio --ref v0.4.2
 codex plugin add typography-studio@typography-studio-marketplace
 ```
 
@@ -58,7 +58,7 @@ root; it does not wrap the plugin inside the marketplace repository.
 1. Sign in to the developer dashboard and select the publishing organization
    and project. The publisher needs owner access or Apps Management Write and
    a verified individual/business developer identity.
-2. Open Plugins and upload a new plugin using `typography-studio-0.4.1-plugin.zip`.
+2. Open Plugins and upload a new plugin using `typography-studio-0.4.2-plugin.zip`.
    Select the actual verified publisher. The displayed publisher follows that
    identity; metadata alone cannot verify it.
 3. Resolve the automated checks, confirm the category offered by the dashboard,

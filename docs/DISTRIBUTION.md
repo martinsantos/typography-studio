@@ -18,9 +18,12 @@
 
 Open [Plugins](https://platform.openai.com/plugins), select the owning organization
 and project, and complete its verified publishing identity. Upload
-`typography-studio-0.4.1-plugin.zip`, which includes the Spanish resources and
+`typography-studio-0.4.2-plugin.zip`, which includes the Spanish resources and
 listing translations. Resolve metadata and skill scans, submit for review,
 then publish the approved version.
+
+Version 0.4.2 prepares the Creativity category and public project, support,
+privacy and MIT license URLs in response to the portal's metadata observations.
 
 The package is skills-only. Use the official
 [submission instructions](https://developers.openai.com/plugins/deploy/submission)
