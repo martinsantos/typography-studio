@@ -6,9 +6,11 @@
 - CLI Skills 1.7.1: el 2026-10-08 se comprobó que detecta una skill,
   `typography-design-review`. La prueba usó `--list` con telemetría desactivada;
   no fue una instalación comunitaria ni un alta en el directorio.
-- OpenAI: el flujo actual pide completar la verificación de persona o empresa
-  de la organización seleccionada. No se registró una subida ni presentación.
-- Índices comunitarios: propuestas preparadas; todavía no enviadas.
+- OpenAI: ZIP 0.4.1 cargado como borrador el 2026-10-08. Los controles
+  automáticos de metadatos y skill siguen pendientes; todavía no se presentó
+  a revisión ni se publicó en el directorio.
+- Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+  enviado con entradas españolas e inglesas; revisión del mantenedor pendiente.
 
 [English](DISTRIBUTION.md).
 
@@ -16,9 +18,12 @@
 
 Abrí [Plugins](https://platform.openai.com/plugins), seleccioná la organización
 y proyecto, y completá la identidad de publicación verificada. Subí
-`typography-studio-0.4.1-plugin.zip`: contiene recursos españoles y
+`typography-studio-0.4.2-plugin.zip`: contiene recursos españoles y
 traducciones de la ficha. Resolvé los controles de metadatos y skills,
 presentá a revisión y publicá la versión aprobada.
+
+La versión 0.4.2 prepara la categoría Creativity y enlaces públicos de proyecto,
+soporte, privacidad y licencia MIT a partir de las observaciones del panel.
 
 Es un plugin compuesto por una skill. Seguí las
 [instrucciones oficiales](https://developers.openai.com/plugins/deploy/submission)
@@ -40,13 +45,13 @@ anónima del CLI. Detectar con `--list` verifica el repositorio, pero no
 demuestra que ya esté indexado. Mostrá una prueba real e invitá a primeros
 usuarios a probarlo y dejar comentarios.
 
-## Propuesta para un índice comunitario
+## Presentación a un índice comunitario
 
 [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md)
-acepta incorporaciones de metadatos mediante pull request. La entrada debe
-enlazar a nuestra fuente, conservando la skill en su repositorio.
-La [propuesta preparada](COMMUNITY_PROPOSAL.md) incluye las entradas exactas,
-la descripción y dos ejemplos de uso.
+acepta incorporaciones de metadatos mediante pull request. El [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+añade entradas españolas e inglesas que enlazan a nuestra fuente. Su aceptación
+sigue pendiente. El [material de presentación](COMMUNITY_PROPOSAL.md) incluye
+las entradas exactas, la descripción y dos ejemplos de uso.
 
 - Nombre: Typography Studio
 - Skill: `typography-design-review`

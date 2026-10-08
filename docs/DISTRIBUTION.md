@@ -6,9 +6,11 @@
 - Skills CLI 1.7.1: repository discovery verified on 2026-10-08; one skill,
   `typography-design-review`, was found. The check used `--list` and disabled
   telemetry; it was not a community installation or a directory listing.
-- OpenAI: the current publishing flow requests individual/business verification
-  for the selected organization. No upload or review submission is recorded.
-- Community listings: proposed, not submitted.
+- OpenAI: plugin ZIP 0.4.1 uploaded as a draft on 2026-10-08. Automated
+  metadata/skill checks remain pending; directory review and publication
+  have not occurred.
+- Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+  submitted with English/Spanish entries; curator review pending.
 
 [Español](DISTRIBUTION.es.md).
 
@@ -16,9 +18,12 @@
 
 Open [Plugins](https://platform.openai.com/plugins), select the owning organization
 and project, and complete its verified publishing identity. Upload
-`typography-studio-0.4.1-plugin.zip`, which includes the Spanish resources and
+`typography-studio-0.4.2-plugin.zip`, which includes the Spanish resources and
 listing translations. Resolve metadata and skill scans, submit for review,
 then publish the approved version.
+
+Version 0.4.2 prepares the Creativity category and public project, support,
+privacy and MIT license URLs in response to the portal's metadata observations.
 
 The package is skills-only. Use the official
 [submission instructions](https://developers.openai.com/plugins/deploy/submission)
@@ -38,13 +43,13 @@ the leaderboard through real user installs recorded by anonymous CLI telemetry.
 Discovery with `--list` is useful verification, not proof of indexing.
 Provide a real proof example and invite feedback from initial users.
 
-## Community directory proposal
+## Community directory submission
 
 [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md)
-accepts metadata additions by pull request. Prepare the relevant README entry
-without copying the skill into its index.
-The [prepared proposal](COMMUNITY_PROPOSAL.md) includes the exact entries,
-description and two example requests.
+accepts metadata additions by pull request. [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+adds English/Spanish README entries linking to this source. Acceptance remains
+pending. The [submission material](COMMUNITY_PROPOSAL.md) includes the exact
+entries, description and two example requests.
 
 - Name: Typography Studio
 - Canonical skill: `typography-design-review`

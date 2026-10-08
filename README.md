@@ -10,14 +10,15 @@ The workflow is independent of any brand, typeface or house style.
 Helper output with the existing open-source **Asap Regular**, not a font drawn
 by this skill. The font is not distributed. See [validation and attribution](docs/VALIDATION.md).
 
-**Version 0.4.1.** English and Spanish instructions, references, templates
+**Version 0.4.2.** English and Spanish instructions, references, templates
 and ready-to-install localized packages. It is a
 review workflow with optional proofing helpers, not an autonomous font editor
 or a certificate of typographic quality. The included corpus focuses on Latin
 English and Spanish; adapt it and use appropriate expertise for other scripts.
 
 [Documentación en español](README.es.md) · [Publishing](docs/PUBLISHING.md) ·
-[Sources](plugins/typography-studio/skills/typography-design-review/references/sources.md)
+[Sources](plugins/typography-studio/skills/typography-design-review/references/sources.md) ·
+[Privacy](docs/PRIVACY.md)
 
 ## What it helps you do
 
@@ -59,7 +60,7 @@ Start with a request such as:
 > at 16, 24 and 48 px. Compare actual images and preserve the current source.
 
 For Spanish install entrypoints and interface text, use the `-es.zip` packages
-from [release v0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
+from [release v0.4.2](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2).
 The agent should answer in your language. Use an agent with image inspection
 and the editor/compiler your project needs.
 

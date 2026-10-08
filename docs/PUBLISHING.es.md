@@ -1,14 +1,14 @@
 # Distribución y publicación
 
-[English](https://github.com/martinsantos/typography-studio/blob/v0.4.1/docs/PUBLISHING.md). El repositorio público y las releases están en
+[English](https://github.com/martinsantos/typography-studio/blob/v0.4.2/docs/PUBLISHING.md). El repositorio público y las releases están en
 [GitHub](https://github.com/martinsantos/typography-studio).
 
 ## Fuente pública y marketplace
 
-La versión 0.4.1 incluye ediciones inglesa y española con la misma identidad
+La versión 0.4.2 incluye ediciones inglesa y española con la misma identidad
 de plugin y skill. Para la española, descargá
-`typography-studio-0.4.1-marketplace-es.zip` desde la
-[release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1)
+`typography-studio-0.4.2-marketplace-es.zip` desde la
+[release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2)
 y extraelo en una carpeta nueva. En un cliente Codex compatible:
 
 ```sh
@@ -24,7 +24,7 @@ Conserva los comandos y los identificadores técnicos.
 Para instalar desde el repositorio público:
 
 ```sh
-codex plugin marketplace add martinsantos/typography-studio --ref v0.4.1
+codex plugin marketplace add martinsantos/typography-studio --ref v0.4.2
 codex plugin add typography-studio@typography-studio-marketplace
 ```
 
@@ -33,7 +33,7 @@ los ZIP españoles seleccionan también los metadatos de interfaz y los
 valores predeterminados en español.
 
 La skill independiente se instala extrayendo
-`typography-studio-0.4.1-skill-es.zip` en el proyecto: su entrada queda en
+`typography-studio-0.4.2-skill-es.zip` en el proyecto: su entrada queda en
 `.agents/skills/typography-design-review/SKILL.md`.
 Al actualizar una instalación propia, revisá sus cambios antes de sustituirla.
 
@@ -64,7 +64,7 @@ y sus hashes. Conservá las etiquetas y descargas anteriores.
 ## Catálogo público de OpenAI
 
 La distribución en GitHub no equivale a aprobación del catálogo.
-El ZIP `typography-studio-0.4.1-plugin-es.zip` contiene
+El ZIP `typography-studio-0.4.2-plugin-es.zip` contiene
 `.codex-plugin/plugin.json`, `skills/`, iconos y licencia en su raíz,
 con interfaz e instrucciones españolas.
 

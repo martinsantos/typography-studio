@@ -1,6 +1,6 @@
 # Typography Studio plugin
 
-Version 0.4.1 packages the `typography-design-review` skill, attributed
+Version 0.4.2 packages the `typography-design-review` skill, attributed
 references, generic assets and optional local proofing helpers.
 
 Invoke `$typography-design-review` in Codex, or use the host's skill invocation

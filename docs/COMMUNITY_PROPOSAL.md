@@ -1,15 +1,16 @@
-# Prepared community proposal
+# Community index submission
 
-Status: prepared, not sent. Destination:
+Status: [PR #559 submitted](https://github.com/heilcheng/awesome-agent-skills/pull/559);
+curator review pending. Destination:
 [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills).
 The proposal adds a source link to the community section in its English and
 Spanish READMEs. It does not copy the skill into the index or claim acceptance.
 
-## Proposed pull request title
+## Pull request title
 
 Add Typography Studio to the community skill index
 
-## Proposed pull request body
+## Pull request body
 
 Typography Studio provides a focused workflow for designing and reviewing
 typefaces through editable sources and actual rendered proofs. This change
@@ -39,7 +40,10 @@ The agent needs image inspection for visual conclusions and appropriate font
 editing tools for source changes. Reader outcomes and untested native
 platforms require separate verification.
 
-## Proposed entries
+Validation of this metadata-only proposal: `git diff --check` and
+`npm run build` in `website/` passed.
+
+## Submitted entries
 
 English:
 

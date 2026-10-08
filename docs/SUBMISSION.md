@@ -1,17 +1,19 @@
 # Prepared directory submission
 
-Version 0.4.1; skills-only plugin. This document is prepared listing material,
+Version 0.4.2; skills-only plugin. This document is prepared listing material,
 not evidence that an upload, review or public publication has occurred.
 
 - Name: **Typography Studio**
 - Subtitle: **Design fonts, inspect proofs**
 - Publisher: **Martín Santos**, as an individual. Select that verified identity
   in the publishing dashboard before uploading.
-- Category: Developer Tools; confirm the dashboard's available category.
+- Category: Creativity; confirm the dashboard's available category.
 - Source: [repository](https://github.com/martinsantos/typography-studio).
 - Support: [repository Issues](https://github.com/martinsantos/typography-studio/issues).
-- Canonical upload: `typography-studio-0.4.1-plugin.zip` from the
-  [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1),
+- Privacy: [bilingual notice](https://github.com/martinsantos/typography-studio/blob/main/docs/PRIVACY.md).
+- Terms for the distributed code: [MIT license](https://github.com/martinsantos/typography-studio/blob/main/LICENSE).
+- Canonical upload: `typography-studio-0.4.2-plugin.zip` from the
+  [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2),
   including English and Spanish resources. Use one directory entry for the plugin.
 - Languages: English and Spanish instructions, references, templates and
   listing text; reports in the user's language. Initial exercise corpus: Latin English/Spanish.

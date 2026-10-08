@@ -1,6 +1,6 @@
 # Contribuir
 
-[English](https://github.com/martinsantos/typography-studio/blob/v0.4.1/CONTRIBUTING.md). Mantené el método independiente de marcas y modas.
+[English](https://github.com/martinsantos/typography-studio/blob/v0.4.2/CONTRIBUTING.md). Mantené el método independiente de marcas y modas.
 Proponé un issue o pull request con problema, hipótesis, evidencia con licencia
 o titularidad propia, condiciones de renderizado y cambio acotado.
 Usá ejemplos genéricos y excluí archivos confidenciales.
