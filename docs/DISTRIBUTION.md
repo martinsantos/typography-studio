@@ -2,13 +2,14 @@
 
 ## Current status
 
-- Public source and release: [Typography Studio 0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
+- Public source and release: [Typography Studio 0.4.2](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2).
 - Skills CLI 1.7.1: repository discovery verified on 2026-10-08; one skill,
   `typography-design-review`, was found. The check used `--list` and disabled
   telemetry; it was not a community installation or a directory listing.
-- OpenAI: plugin ZIP 0.4.1 uploaded as a draft on 2026-10-08. Automated
-  metadata/skill checks remain pending; directory review and publication
-  have not occurred.
+- OpenAI: corrected plugin ZIP 0.4.2 uploaded as a draft on 2026-10-08.
+  Skill safety/security checks passed. The portal could not complete all
+  automated metadata checks and explicitly allows submission for review.
+  Directory review and publication have not occurred.
 - Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
   submitted with English/Spanish entries; curator review pending.
 
