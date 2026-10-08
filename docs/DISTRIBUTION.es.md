@@ -6,8 +6,9 @@
 - CLI Skills 1.7.1: el 2026-10-08 se comprobó que detecta una skill,
   `typography-design-review`. La prueba usó `--list` con telemetría desactivada;
   no fue una instalación comunitaria ni un alta en el directorio.
-- OpenAI: el flujo actual pide completar la verificación de persona o empresa
-  de la organización seleccionada. No se registró una subida ni presentación.
+- OpenAI: ZIP 0.4.1 cargado como borrador el 2026-10-08. Los controles
+  automáticos de metadatos y skill siguen pendientes; todavía no se presentó
+  a revisión ni se publicó en el directorio.
 - Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
   enviado con entradas españolas e inglesas; revisión del mantenedor pendiente.
 
