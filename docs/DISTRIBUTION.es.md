@@ -2,13 +2,14 @@
 
 ## Estado actual
 
-- Fuente y release públicas: [Typography Studio 0.4.1](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1).
+- Fuente y release públicas: [Typography Studio 0.4.2](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.2).
 - CLI Skills 1.7.1: el 2026-10-08 se comprobó que detecta una skill,
   `typography-design-review`. La prueba usó `--list` con telemetría desactivada;
   no fue una instalación comunitaria ni un alta en el directorio.
-- OpenAI: ZIP 0.4.1 cargado como borrador el 2026-10-08. Los controles
-  automáticos de metadatos y skill siguen pendientes; todavía no se presentó
-  a revisión ni se publicó en el directorio.
+- OpenAI: ZIP corregido 0.4.2 cargado como borrador el 2026-10-08.
+  La skill pasó sus controles de seguridad. El panel no pudo completar todos
+  los controles automáticos de metadatos y permite presentar a revisión.
+  Todavía no se presentó ni se publicó en el directorio.
 - Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
   enviado con entradas españolas e inglesas; revisión del mantenedor pendiente.
 

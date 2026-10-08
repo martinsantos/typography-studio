@@ -14,6 +14,11 @@ metadata, HTML and screenshots. Proof HTML embeds the selected font.
 The capture helper blocks external network requests. These helpers do not
 send the selected fonts or proofs to the publisher.
 
+User-selected inputs can contain author or copyright metadata in a font,
+or personal information in the chosen proof text. Helpers use that content
+only to inspect the font and produce the requested proofs; outputs can
+include font metadata and the selected text.
+
 ## Host tools and installation
 
 The ChatGPT, Codex or other agent host may process information supplied in
@@ -31,8 +36,13 @@ the separate Skills CLI, its own telemetry policy applies; see the
 The user controls local generated files and can delete them with their
 normal file tools. Embedded fonts and proof images retain the source
 material's license and confidentiality requirements.
+Generated outputs persist in the chosen local folder until the user removes
+them; the helpers provide no automatic retention or deletion schedule.
 
 Support uses [public GitHub Issues](https://github.com/martinsantos/typography-studio/issues).
 Do not include private fonts, credentials, personal data or confidential
 client files in a public issue. The publisher can see the information you
 choose to post there.
+That public information remains available while the post is available.
+GitHub account controls, edit history and retention are governed by GitHub;
+use its account permissions to manage content you posted.
