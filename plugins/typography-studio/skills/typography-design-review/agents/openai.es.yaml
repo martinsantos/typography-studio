@@ -1,0 +1,6 @@
+interface:
+  display_name: "Diseño y revisión tipográfica"
+  short_description: "Diseñá y refiná fuentes con revisión visual real"
+  default_prompt: "Usá $typography-design-review para diseñar o revisar una fuente desde su propósito, inspeccionar glifos y palabras renderizadas, ajustar espaciado y jerarquía, y registrar evidencias y límites."
+policy:
+  allow_implicit_invocation: true

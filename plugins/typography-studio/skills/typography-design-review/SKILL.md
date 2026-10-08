@@ -9,6 +9,10 @@ Work from a brief to a coherent system of forms, then draw, render, inspect,
 correct and document. Use the user's language for explanations and reports.
 Do not approve a drawing because its files compile or its curves are smooth.
 
+For requests in Spanish, read [the Spanish instructions](SKILL.es.md) and use
+the Spanish references and templates linked there. Keep the same technical
+identifiers and evidence requirements in either language.
+
 ## Select the resources
 
 - New design or inconsistent tone: [brief-to-form.md](references/brief-to-form.md).
@@ -64,7 +68,8 @@ numbers and language-specific marks. Test minimum, typical and stress sizes,
 both polarities, and the actual repertoire rather than a fixed pangram alone.
 
 The optional `scripts/build_proof.py` creates a self-contained HTML proof from
-a supplied font and corpus. It withholds drawing samples that lack characters.
+a supplied font and corpus. Use `--language es` for Spanish labels and messages;
+`--language en` selects English. It withholds drawing samples that lack characters.
 `scripts/capture_proof.mjs` can capture them with Playwright and report renderer
 font use. Adapt the corpus, sizes and toolchain to the project.
 

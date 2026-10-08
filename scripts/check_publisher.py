@@ -16,8 +16,10 @@ def main() -> None:
     source = pathlib.Path(__file__).resolve().parents[1]
     validator = importlib.import_module('validate')
     publisher = importlib.import_module('publish')
+    version = validator.validate()['version']
+    tag = 'v' + version
     with tempfile.TemporaryDirectory(prefix='type-publisher-check-') as temporary:
-        temp = pathlib.Path(temporary)
+        temp = pathlib.Path(temporary).resolve()
         project = temp / 'project'
         project.mkdir()
         for item in validator.project_files():
@@ -55,10 +57,11 @@ def main() -> None:
             elif args[1:3] == ('release', 'create'):
                 assert '--verify-tag' in args
                 assets = [pathlib.Path(argument) for argument in args[4:] if argument.endswith(('.zip', 'SHA256SUMS', 'package-manifest.json'))]
-                assert len(assets) == 5 and all(asset.is_file() for asset in assets)
+                assert len(assets) == 8 and all(asset.is_file() for asset in assets)
+                assert {'typography-studio-' + version + '-plugin-es.zip', 'typography-studio-' + version + '-skill-es.zip'} <= {asset.name for asset in assets}
                 value = {}
             elif args[1:3] == ('release', 'view'):
-                return subprocess.CompletedProcess(args, 0, 'https://github.com/case-owner/type-case/releases/tag/v0.4.0\n', '')
+                return subprocess.CompletedProcess(args, 0, 'https://github.com/case-owner/type-case/releases/tag/' + tag + '\n', '')
             elif args[1:3] == ('api', 'repos/case-owner/type-case/topics'):
                 payload = pathlib.Path(args[args.index('--input') + 1])
                 assert 'type-design' in json.loads(payload.read_text())['names']
@@ -75,7 +78,7 @@ def main() -> None:
         sha = subprocess.check_output(['git', '-C', str(project), 'rev-parse', 'HEAD'], text=True).strip()
         remote_sha = subprocess.check_output(['git', '--git-dir', str(remote), 'rev-parse', 'main'], text=True).strip()
         assert sha == remote_sha == receipt['head']
-        assert subprocess.check_output(['git', '--git-dir', str(remote), 'rev-parse', 'v0.4.0^{commit}'], text=True).strip() == sha
+        assert subprocess.check_output(['git', '--git-dir', str(remote), 'rev-parse', tag + '^{commit}'], text=True).strip() == sha
 
         def refused(reason, expected_reads):
             previous = len(calls)

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "Perfiles iniciales ajustables; no son normas de facilidad de lectura",
+  "profiles": {
+    "screen-reading": {
+      "units": "CSS px",
+      "body_size": 18,
+      "body_line_height": 1.5,
+      "lead_size": 22,
+      "subtitle_size": 24,
+      "title_size": 40,
+      "guide_size": 16,
+      "target_desktop_graphemes_per_line": 65
+    },
+    "editorial": {
+      "units": "CSS px",
+      "body_size": 20,
+      "body_line_height": 1.65,
+      "lead_size": 24,
+      "subtitle_size": 28,
+      "title_size": 48,
+      "guide_size": 16,
+      "target_desktop_graphemes_per_line": 65
+    },
+    "print": {
+      "units": "pt",
+      "body_size": 11,
+      "body_line_height": 1.4,
+      "lead_size": 13,
+      "subtitle_size": 15,
+      "title_size": 26,
+      "guide_size": 9,
+      "target_graphemes_per_line": 60
+    }
+  },
+  "review": [
+    "Compará tamaño aparente, altura de tinta y caja de línea por separado.",
+    "Revisá título, bajada, cuerpo y guías en el contenido real.",
+    "Contá grafemas en líneas compuestas; las unidades CSS ch no cuentan texto.",
+    "En móvil, usá el ancho disponible sin imponer la medida de escritorio.",
+    "Ajustá tamaños e interlineado según fuente, idioma, soporte y lectores.",
+    "Comprobá contraste, ampliación, redistribución y ajustes de espaciado."
+  ]
+}

@@ -31,6 +31,9 @@ def read_corpus(path: Path) -> list[dict]:
             raise ValueError(f"Sample {ident} needs a string label.")
         if sample.get("kind", "words") not in {"words", "diagnostic", "paragraph"}:
             raise ValueError(f"Unsupported kind in sample {ident}.")
+        if "language" in sample and (not isinstance(sample["language"], str)
+                                     or not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", sample["language"])):
+            raise ValueError(f"Invalid language tag in sample {ident}.")
         for key in ("heading", "lead"):
             if key in sample and (not isinstance(sample[key], str) or not sample[key]):
                 raise ValueError(f"Optional {key} in {ident} must be nonempty text.")
