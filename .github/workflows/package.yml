@@ -1,0 +1,25 @@
+name: Validate and package
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check metadata, references and distribution scope
+        run: python scripts/validate.py
+      - name: Exercise publisher with local Git and simulated GitHub
+        run: python scripts/check_publisher.py
+      - name: Build verified archives
+        run: python scripts/package.py --output dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: typography-studio-packages
+          path: dist/
+          if-no-files-found: error

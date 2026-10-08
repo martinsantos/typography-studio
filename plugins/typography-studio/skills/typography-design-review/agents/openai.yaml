@@ -1,0 +1,6 @@
+interface:
+  display_name: "Type Design & Visual Review"
+  short_description: "Draw and refine fonts through real visual review"
+  default_prompt: "Use $typography-design-review to design or review a typeface from its brief, inspect actual rendered glyphs and words, refine spacing and hierarchy, and report evidence and remaining limits."
+policy:
+  allow_implicit_invocation: true

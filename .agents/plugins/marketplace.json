@@ -1,0 +1,10 @@
+{
+  "name": "typography-studio-marketplace",
+  "interface": {"displayName": "Typography Studio"},
+  "plugins": [{
+    "name": "typography-studio",
+    "source": {"source": "local", "path": "./plugins/typography-studio"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Design"
+  }]
+}

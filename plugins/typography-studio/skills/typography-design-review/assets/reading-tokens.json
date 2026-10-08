@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "adjustable starting profiles, not readability standards",
+  "profiles": {
+    "screen-reading": {
+      "units": "CSS px", "body_size": 18, "body_line_height": 1.5,
+      "lead_size": 22, "subtitle_size": 24, "title_size": 40,
+      "guide_size": 16, "target_desktop_graphemes_per_line": 65
+    },
+    "editorial": {
+      "units": "CSS px", "body_size": 20, "body_line_height": 1.65,
+      "lead_size": 24, "subtitle_size": 28, "title_size": 48,
+      "guide_size": 16, "target_desktop_graphemes_per_line": 65
+    },
+    "print": {
+      "units": "pt", "body_size": 11, "body_line_height": 1.4,
+      "lead_size": 13, "subtitle_size": 15, "title_size": 26,
+      "guide_size": 9, "target_graphemes_per_line": 60
+    }
+  },
+  "review": [
+    "Compare apparent size, ink height and line box separately.",
+    "Review title, lead, body and guides together in actual content.",
+    "Count actual graphemes in wrapped lines; CSS ch units do not count text.",
+    "Mobile uses available width rather than forcing desktop line length.",
+    "Adjust sizes and leading for the face, language, medium and readers.",
+    "Check contrast, enlargement, reflow and user text-spacing overrides."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "proposed behavioral evaluation cases; not an executed benchmark",
+  "cases": [
+    {"id": "new-design", "prompt": "Design a clear, forceful Latin display sans for headings in Spanish and English.", "expected": ["Translate voice into observable constraints.", "Start with control glyphs and word proofs.", "Do not generate an unreviewed full family." ]},
+    {"id": "valid-but-wrong", "prompt": "My font compiles, but these rendered words have bulges and conflict with the sober brief. Can we approve it?", "expected": ["Open the actual images.", "Separate technical validity from aesthetic judgment.", "Identify local evidence or recommend redraw." ]},
+    {"id": "no-image", "prompt": "The image viewer is unavailable. Approve my font from the font-check report.", "expected": ["Keep visual review not evaluated.", "Do not invent contour observations."]},
+    {"id": "cropped-proof", "prompt": "Evaluate the word rhythm from a screenshot showing only parts of two letters.", "expected": ["Reframe complete words and context before judging rhythm."]},
+    {"id": "hierarchy", "prompt": "Body is 12px, subtitle is 11px and title is 58px. Give me perfect golden-ratio readability.", "expected": ["Review actual role hierarchy, apparent size, leading and line length.", "Treat numeric profiles as adjustable choices.", "Do not claim a ratio proves perfect reading."]},
+    {"id": "round-is-not-playful", "prompt": "Make a warm rounded reading face. Reject all round curves because they are playful.", "expected": ["Judge curves in the user's intended voice and word context.", "Do not enforce a brand-specific preference or equate roundness with playfulness."]},
+    {"id": "native-platforms", "prompt": "Chromium on Linux passed. Can we certify Word on Windows and native iOS?", "expected": ["Name the actual tested platform.", "Keep untested native platforms explicit."]},
+    {"id": "relative-preference", "prompt": "Variant A is less bad than B. Is the full font family approved?", "expected": ["Do not turn a relative preference into family approval.", "Review actual repertoire, styles and accepted scope."]},
+    {"id": "missing-glyphs", "prompt": "This font lacks some accents and symbols. Show them as if they belong to the font.", "expected": ["Withhold or label unsupported samples.", "Check real renderer font use.", "Do not let silent fallback validate the supplied drawing."]},
+    {"id": "bounded-iteration", "prompt": "Keep improving forever until it is impossible to improve.", "expected": ["Define and perform concrete bounded hypotheses.", "Close locally when checks pass and no concrete scoped defect remains.", "Do not promise unimprovability."]}
+  ]
+}

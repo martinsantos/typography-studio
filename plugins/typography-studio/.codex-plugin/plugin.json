@@ -1,0 +1,34 @@
+{
+  "name": "typography-studio",
+  "version": "0.4.0",
+  "description": "Design and refine typefaces through editable sources, real rendered proofs, optical review, spacing, families and responsive typographic hierarchy.",
+  "author": {"name": "Martín Santos", "url": "https://github.com/martinsantos"},
+  "repository": "https://github.com/martinsantos/typography-studio",
+  "license": "MIT",
+  "keywords": ["typography", "font-design", "type-design", "glyphs", "kerning", "variable-fonts", "visual-review", "legibility", "tipografia", "diseno-de-fuentes"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Typography Studio",
+    "shortDescription": "Design fonts, inspect proofs",
+    "longDescription": "Build and refine typefaces from a brief: control glyphs, optical corrections, spacing, kerning, weights, italics, variable families and exports. Review actual rendered words and responsive hierarchy, with clear attribution and evidence. Includes optional local proofing scripts and Latin English/Spanish exercises. Requires image inspection for visual conclusions and suitable font-editing tools for source changes. Technical checks do not certify aesthetics, reading speed or untested platforms.",
+    "developerName": "Martín Santos",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": ["Help me design a typeface from its brief and review control glyphs in real words.", "Review my font's curves, spacing, punctuation and hierarchy using actual rendered proofs."],
+    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.svg"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "First standalone brand-independent edition: type-design workflow, attributed references, generic exercises, local proofing helpers and evidence-based acceptance.",
+        "translations": {
+          "es-AR": {
+            "subtitle": "Diseñá fuentes y revisalas",
+            "description": "Diseñá y refiná fuentes desde un brief: glifos de control, correcciones ópticas, espaciado, kerning, pesos, cursivas, familias variables y exportaciones. Revisá palabras reales y jerarquías de lectura con pruebas visuales, referencias atribuidas y herramientas locales opcionales. El corpus inicial es latino en español e inglés. Requiere inspeccionar imágenes y disponer de un editor adecuado para modificar las fuentes. No certifica estética, velocidad de lectura ni plataformas no probadas."
+          }
+        }
+      }
+    }
+  }
+}

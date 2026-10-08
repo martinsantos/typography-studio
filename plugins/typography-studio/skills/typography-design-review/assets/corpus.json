@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "Generic Latin English/Spanish diagnostics; adapt to the project and other scripts.",
+  "samples": [
+    {"id": "controls", "label": "Control structures and repeated intervals", "kind": "diagnostic", "text": "HHOO HOOH nono nnonn minimum"},
+    {"id": "critical", "label": "Critical curves in words", "kind": "words", "text": "sostenida sesese system access necesaria esencia"},
+    {"id": "spacing", "label": "Word rhythm and pairs", "kind": "words", "text": "Conectamos factura AVATAR To Wa espacio lectura"},
+    {"id": "recognition", "label": "Recognition in context", "kind": "diagnostic", "text": "Il1 O0 rn m modern minimum 1010"},
+    {"id": "marks", "label": "Spanish marks and decomposed accents", "kind": "words", "text": "Á É Í Ó Ú Ñ ü ¿Cuánto? ¡Sí! acción ñ á"},
+    {"id": "data", "label": "Punctuation, figures and currency", "kind": "words", "text": "Sr. Pérez: 1.234,56 €; $ 9.876. (2026) [A–Z] 12:45 25%"},
+    {"id": "en-paragraph", "label": "English reading context", "kind": "paragraph", "heading": "A clear reading system", "lead": "Review words, punctuation and rhythm at their intended sizes.", "text": "A clear typeface supports words before it calls attention to individual letters. Read this paragraph at its intended size, then compare punctuation, open counters and the rhythm of spaces. A smooth curve can still produce an awkward word; a valid file can still contain a weak drawing."},
+    {"id": "es-paragraph", "label": "Contexto de lectura en español", "kind": "paragraph", "heading": "Un sistema claro de lectura", "lead": "Revisemos palabras, signos y ritmo en el tamaño real.", "text": "Una familia tipográfica se entiende en palabras y párrafos. Las letras, sus contraformas y los blancos construyen un ritmo compartido. Revisemos acentos, signos, cifras y finales de línea en el tamaño real de lectura, sin confundir una preferencia visual con una medición de comprensión."}
+  ]
+}
