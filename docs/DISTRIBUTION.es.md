@@ -8,7 +8,8 @@
   no fue una instalación comunitaria ni un alta en el directorio.
 - OpenAI: el flujo actual pide completar la verificación de persona o empresa
   de la organización seleccionada. No se registró una subida ni presentación.
-- Índices comunitarios: propuestas preparadas; todavía no enviadas.
+- Agent Skill Index: [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+  enviado con entradas españolas e inglesas; revisión del mantenedor pendiente.
 
 [English](DISTRIBUTION.md).
 
@@ -40,13 +41,13 @@ anónima del CLI. Detectar con `--list` verifica el repositorio, pero no
 demuestra que ya esté indexado. Mostrá una prueba real e invitá a primeros
 usuarios a probarlo y dejar comentarios.
 
-## Propuesta para un índice comunitario
+## Presentación a un índice comunitario
 
 [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md)
-acepta incorporaciones de metadatos mediante pull request. La entrada debe
-enlazar a nuestra fuente, conservando la skill en su repositorio.
-La [propuesta preparada](COMMUNITY_PROPOSAL.md) incluye las entradas exactas,
-la descripción y dos ejemplos de uso.
+acepta incorporaciones de metadatos mediante pull request. El [PR #559](https://github.com/heilcheng/awesome-agent-skills/pull/559)
+añade entradas españolas e inglesas que enlazan a nuestra fuente. Su aceptación
+sigue pendiente. El [material de presentación](COMMUNITY_PROPOSAL.md) incluye
+las entradas exactas, la descripción y dos ejemplos de uso.
 
 - Nombre: Typography Studio
 - Skill: `typography-design-review`
