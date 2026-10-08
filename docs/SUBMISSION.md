@@ -5,10 +5,14 @@ not evidence that an upload, review or public publication has occurred.
 
 - Name: **Typography Studio**
 - Subtitle: **Design fonts, inspect proofs**
-- Publisher: the developer identity verified in the publishing dashboard.
+- Publisher: **Martín Santos**, as an individual. Select that verified identity
+  in the publishing dashboard before uploading.
 - Category: Developer Tools; confirm the dashboard's available category.
-- Source and support after repository publication:
-  `https://github.com/martinsantos/typography-studio`, Issues tab.
+- Source: [repository](https://github.com/martinsantos/typography-studio).
+- Support: [repository Issues](https://github.com/martinsantos/typography-studio/issues).
+- Canonical upload: `typography-studio-0.4.1-plugin.zip` from the
+  [release](https://github.com/martinsantos/typography-studio/releases/tag/v0.4.1),
+  including English and Spanish resources. Use one directory entry for the plugin.
 - Languages: English and Spanish instructions, references, templates and
   listing text; reports in the user's language. Initial exercise corpus: Latin English/Spanish.
 
